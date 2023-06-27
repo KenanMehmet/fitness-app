@@ -1,8 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
+
+import HeroBanner from '../components/HeroBanner'
+import SearchExercises from '../components/SearchExercises'
+import Exercises from '../components/Exercises'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div>
+      <HeroBanner />
+      <SearchExercises />
+      <Exercises />
+    </div>
   )
 }
 
