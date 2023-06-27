@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Raleway';
     background-color: #e8e2e3;
@@ -22,7 +28,7 @@ body {
 
 .navbar-wrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -42,12 +48,20 @@ body {
     .hero-banner {
         margin-top: 70px;
     }
+
+    .background-text {
+        display: none;
+    }
 }
 
 @media (min-width: 900px) {
     .navbar-wrapper {
         gap: 48px;
         margin-top: 32px;
+    }
+
+    .background-text {
+        display: block;
     }
 }
 
@@ -99,9 +113,16 @@ button:active {
 .hero-banner-img {
     position: absolute;
     right: 40px;
-    top: 0px;
     width: 700px;
     height: 900px;
     margin-top: -330px;
 
+}
+
+.background-text {
+    font-weight: 600;
+    color: #ff2625;
+    opacity: 0.1;
+    font-size: 200px;
+    float: left;
 }

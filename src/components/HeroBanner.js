@@ -8,13 +8,14 @@ const HeroBanner = () => {
     return (
         <div className='hero-banner'>
             <p style={{ color: "#FF2625", fontWeight: "600", fontSize: "26px" }}>Fitness Club</p>
-            <p style={{ fontWeight: "700", fontSize: "44px" }}>
+            <p style={{ fontWeight: "700", fontSize: "44px", marginBottom: "23px", marginTop: "30px" }}>
                 Sweat, Smile <br /> and Repeat
             </p>
-            <p style={{ fontWeight: "600", fontSize: "22px", lineHeight: "35px" }}>
+            <p style={{ fontWeight: "600", fontSize: "22px", lineHeight: "35px", }}>
                 Check out these sweet exercises
             </p>
             <Button text={"ExploreExercises"} iconName={'arrow-right'} link={"#exercises"} />
+            <h1 className='background-text'>Exercise</h1>
             <img src={HeroBannerImage} className='hero-banner-img' />
         </div>
     )
