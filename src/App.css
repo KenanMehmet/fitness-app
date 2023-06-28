@@ -4,10 +4,10 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    font-family: 'Raleway';
 }
 
 body {
-    font-family: 'Raleway';
     background-color: #e8e2e3;
 }
 
@@ -33,6 +33,10 @@ body {
     padding-right: 20px;
 }
 
+.banner-wrapper {
+    padding-bottom: 450px;
+}
+
 .hero-banner {
     margin-top: 212px;
     padding: 20px;
@@ -51,6 +55,14 @@ body {
 
     .background-text {
         display: none;
+    }
+
+    .search-wrapper h1 {
+        font-size: 30px;
+    }
+
+    .search-field {
+        width: 350px
     }
 }
 
@@ -115,7 +127,7 @@ button:active {
     right: 40px;
     width: 700px;
     height: 900px;
-    margin-top: -330px;
+    margin-top: -388px;
 
 }
 
@@ -125,4 +137,30 @@ button:active {
     opacity: 0.1;
     font-size: 200px;
     float: left;
+}
+
+.search-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    align-items: center;
+    margin-top: 37px;
+    justify-content: center;
+    padding: 20px;
+    background-color: #dddadb;
+}
+
+.search-wrapper h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 44px;
+}
+
+.search-field {
+    height: 40px;
+    border-radius: 10px;
+    padding: 20px;
+    font-weight: 700;
+    border: none;
+    width: 1000px;
 }
