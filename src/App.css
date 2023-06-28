@@ -163,4 +163,5 @@ button:active {
     font-weight: 700;
     border: none;
     width: 1000px;
+    margin-left: 12vw;
 }
