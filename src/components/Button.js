@@ -3,7 +3,6 @@ import { AiOutlineArrowRight } from 'react-icons/ai'
 
 
 const getIconFromName = (iconName) => {
-    console.log(iconName)
     switch (iconName) {
         case ('arrow-right'):
             return <AiOutlineArrowRight />;
@@ -12,19 +11,22 @@ const getIconFromName = (iconName) => {
     }
 }
 
-
-const Button = ({ text, iconName, link, onClickfunction }) => {
+const Button = ({ text, iconName, link, onClickFunction }) => {
+    const handleClick = () => {
+        console.log(onClickFunction)
+        onClickFunction()
+    }
     const icon = getIconFromName(iconName);
     if (icon) {
         return (
-            <button onClick={onClickfunction}>
+            <button onClick={handleClick}>
                 <span className='button-text'>{text}</span>
                 <span className='button-icon'>{icon}</span>
             </button>
         )
     }
     return (
-        <button href={link}>
+        <button href={link} onClick={handleClick}>
             <span className='button-text'>{text}</span>
         </button>
     )

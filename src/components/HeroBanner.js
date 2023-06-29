@@ -14,7 +14,12 @@ const HeroBanner = () => {
                 <p style={{ fontWeight: "600", fontSize: "22px", lineHeight: "35px", }}>
                     Check out these sweet exercises
                 </p>
-                <Button text={"ExploreExercises"} iconName={'arrow-right'} link={"#exercises"} />
+                <Button
+                    text={"ExploreExercises"}
+                    iconName={'arrow-right'}
+                    link={"#exercises"}
+                    onClickFunction={(e) => console.log(process.env.REACT_APP_RAPID_API_KEY)}
+                />
                 <img src={HeroBannerImage} className='hero-banner-img' />
             </div>
             <div style={{ zIndex: -100, position: "absolute" }}>
