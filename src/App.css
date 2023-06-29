@@ -165,3 +165,24 @@ button:active {
     width: 1000px;
     margin-left: 12vw;
 }
+
+.horizontal-scrollbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.exercise-card img {
+    height: 326px;
+}
+
+.bodypart {
+    transform: scale(1, 1);
+    transition: 0.3s all ease-in-out;
+}
+
+.exercise-card:hover,
+.bodypart:hover {
+    transform: scale(1.1, 1.1);
+}
