@@ -10,7 +10,7 @@ import Footer from './components/Footer';
 
 const App = () => {
     return (
-        <div style={{ display: "grid" }}>
+        <div>
             <Navbar />
             <Routes>
                 <Route path="/" element={<Home />} />

@@ -5,7 +5,7 @@ import { exerciseOptions, fetchData } from '../utils/fetchData'
 import HorizontalScrollbar from './HorizontalScrollbar'
 
 
-const SearchExercises = (setExercises, bodyPart, setBodyPart) => {
+const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
     const [search, setSearch] = useState('')
     const [bodyParts, setBodyParts] = useState([]);
 
@@ -48,7 +48,7 @@ const SearchExercises = (setExercises, bodyPart, setBodyPart) => {
             </div>
             <div className='exercises-wrapper' style={{ position: "relative", width: "100%", padding: "10px" }}>
                 <h1>hello</h1>
-                <HorizontalScrollbar data={bodyParts} bodyPart={bodyPart} setBodyPart={setBodyPart} />
+                <HorizontalScrollbar data={bodyParts} bodyParts bodyPart={bodyPart} setBodyPart={setBodyPart} />
             </div>
         </div>
     )

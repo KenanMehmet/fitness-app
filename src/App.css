@@ -173,16 +173,37 @@ button:active {
     flex-direction: row;
 }
 
-.exercise-card img {
-    height: 326px;
-}
-
 .bodypart {
+    width: 200px;
+    height: 200px;
     transform: scale(1, 1);
     transition: 0.3s all ease-in-out;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.bodypart h1 {
+    font-weight: bold;
+    font-size: 24px;
+    color: #3a1212;
+    text-transform: capitalize;
 }
 
 .exercise-card:hover,
 .bodypart:hover {
     transform: scale(1.1, 1.1);
+}
+
+.right-arrow,
+.left-arrow {
+    cursor: pointer;
+    background: transparent;
+    outline: none;
+    border: none;
+    color: #FF2625;
+    font-size: 25px;
+    border-radius: 4px;
+    transform: scale(1, 1);
+    transition: 0.3s all ease-in-out;
 }
