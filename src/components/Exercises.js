@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Pagination } from '@mui/material'
 
+import ExerciseCard from './ExerciseCard'
 import { exerciseOptions, fetchData } from '../utils/fetchData'
 
 const Exercises = ({ bodyPart, setBodyPart, exercises }) => {
@@ -10,7 +11,9 @@ const Exercises = ({ bodyPart, setBodyPart, exercises }) => {
             <h3 styles={{ marginBottom: "46px" }}>Showing results</h3>
             <div className='exercises-container'>
                 {exercises.map((exercise, index) => (
-                    <p>{exercise.name}</p>
+                    <ExerciseCard>
+                        {exercise.name}
+                    </ExerciseCard>
                 ))
                 }
             </div>
