@@ -19,14 +19,14 @@ const Button = ({ text, iconName, link, onClickFunction }) => {
     const icon = getIconFromName(iconName);
     if (icon) {
         return (
-            <button onClick={handleClick}>
+            <button onClick={handleClick} className='default-button'>
                 <span className='button-text'>{text}</span>
                 <span className='button-icon'>{icon}</span>
             </button>
         )
     }
     return (
-        <button href={link} onClick={handleClick}>
+        <button href={link} onClick={handleClick} className='default-button'>
             <span className='button-text'>{text}</span>
         </button>
     )

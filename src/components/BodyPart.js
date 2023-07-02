@@ -15,8 +15,8 @@ const BodyPart = ({ item, bodyPart, setBodyPart }) => {
                 gap: '40px',
             }}
             onClick={() => {
-                console.log(item)
                 setBodyPart(item);
+                window.scroll({ top: 1800, left: 100, behavior: 'smooth' })
             }
             }
         >
